@@ -44,7 +44,7 @@ export default function Hero() {
               <img
                 src="/assets/mascot/hero-corgi.png"
                 alt="DoneBuddy corgi mascot wearing a green bandana"
-                className="w-full drop-shadow-xl"
+                className="w-full drop-shadow-2xl"
               />
             </FloatingMascot>
 
@@ -55,8 +55,6 @@ export default function Hero() {
                 className="rotate-6"
               />
             </div>
-
-            <div className="absolute bottom-0 left-1/2 h-24 w-24 -translate-x-1/2 rounded-full bg-sage/25 blur-sm md:h-32 md:w-32" />
           </div>
         </ScrollReveal>
       </div>

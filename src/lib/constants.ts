@@ -1,6 +1,7 @@
 export const APP_STORE_URL = '#'
 export const GOOGLE_PLAY_URL = '#'
 export const CONTACT_EMAIL = 'hello@donebuddy.app'
+export const APP_LOGO = '/applogo.png'
 
 export const navLinks = [
   { label: 'Home', href: '/' },

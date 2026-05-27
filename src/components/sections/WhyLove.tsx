@@ -16,7 +16,7 @@ export default function WhyLove() {
             <img
               src="/assets/mascot/corgi-heart.png"
               alt="DoneBuddy corgi mascot hugging a heart"
-              className="mx-auto w-full max-w-sm drop-shadow-lg"
+              className="mx-auto w-full max-w-sm drop-shadow-xl"
             />
           </ScrollReveal>
 

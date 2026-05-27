@@ -54,6 +54,10 @@ Current placeholders are SVG files (`today-tasks.svg`, `streak.svg`). To swap in
 
 No other code changes are required.
 
+## App logo
+
+The DoneBuddy app logo lives at [`public/applogo.png`](public/applogo.png). It is used in the header, footer, bottom CTA, and browser favicon. Replace that file to update the logo sitewide.
+
 ## Replace mascot illustrations
 
 Generated mascot images live in `public/assets/mascot/`:
