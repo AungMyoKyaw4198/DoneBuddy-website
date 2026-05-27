@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 40" role="img" aria-label="Get it on Google Play">
+  <rect width="135" height="40" rx="6" fill="#000"/>
+  <text x="44" y="13" fill="#fff" font-family="Arial, sans-serif" font-size="7">GET IT ON</text>
+  <text x="44" y="28" fill="#fff" font-family="Arial, sans-serif" font-size="13" font-weight="700">Google Play</text>
+  <path fill="#34a853" d="M11 8 22 20 11 32z"/>
+  <path fill="#fbbc04" d="M22 20 30 15v10z"/>
+  <path fill="#4285f4" d="M22 20 30 25 30 15z"/>
+  <path fill="#ea4335" d="M11 32 22 20 30 25 30 32z"/>
+</svg>
