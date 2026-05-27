@@ -28,17 +28,17 @@ export default function Testimonials() {
           </SectionHeading>
         </ScrollReveal>
 
-        <div className="relative mt-12">
+        <div className="relative mt-12 px-1 md:px-4">
           <button
             type="button"
             onClick={prev}
-            className="absolute -left-2 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-white p-2 shadow-md ring-1 ring-brown/5 md:block"
+            className="absolute -left-2 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-white p-2 shadow-md ring-1 ring-brown/5 md:block lg:-left-4"
             aria-label="Previous testimonials"
           >
             <ChevronLeft className="h-5 w-5 text-brown" />
           </button>
 
-          <div className="overflow-hidden">
+          <div className="overflow-x-hidden py-3 md:py-4">
             <AnimatePresence mode="wait">
               <motion.div
                 key={index}
@@ -46,27 +46,27 @@ export default function Testimonials() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={prefersReducedMotion ? undefined : { opacity: 0, x: -24 }}
                 transition={{ duration: 0.35, ease: 'easeOut' }}
-                className="grid gap-6 md:grid-cols-3"
+                className="grid items-stretch gap-6 md:grid-cols-3 md:gap-7"
               >
                 {visibleTestimonials.map((testimonial) => (
                   <article
                     key={`${testimonial.name}-${testimonial.quote.slice(0, 12)}`}
-                    className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-brown/5"
+                    className="flex min-h-[15.5rem] flex-col rounded-3xl bg-white p-7 shadow-sm ring-1 ring-brown/5 md:min-h-[17rem] lg:min-h-[18rem] lg:p-8"
                   >
-                    <div className="mb-4 flex gap-1">
+                    <div className="mb-5 flex gap-1">
                       {Array.from({ length: 5 }).map((_, starIndex) => (
                         <Star
                           key={starIndex}
-                          className="h-4 w-4 fill-warm-yellow text-warm-yellow"
+                          className="h-4 w-4 fill-warm-yellow text-warm-yellow lg:h-[1.125rem] lg:w-[1.125rem]"
                           aria-hidden="true"
                         />
                       ))}
                     </div>
-                    <p className="text-sm italic leading-relaxed text-brown-light">
+                    <p className="flex-1 text-sm leading-relaxed text-brown-light italic lg:text-[0.9375rem] lg:leading-7">
                       &ldquo;{testimonial.quote}&rdquo;
                     </p>
-                    <div className="mt-6 flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sage-light font-semibold text-sage-dark">
+                    <div className="mt-6 flex items-center gap-3 lg:mt-8">
+                      <div className="flex h-11 w-11 items-center justify-center rounded-full bg-sage-light font-semibold text-sage-dark">
                         {testimonial.initials}
                       </div>
                       <span className="font-semibold text-brown">
@@ -82,7 +82,7 @@ export default function Testimonials() {
           <button
             type="button"
             onClick={next}
-            className="absolute -right-2 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-white p-2 shadow-md ring-1 ring-brown/5 md:block"
+            className="absolute -right-2 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-white p-2 shadow-md ring-1 ring-brown/5 md:block lg:-right-4"
             aria-label="Next testimonials"
           >
             <ChevronRight className="h-5 w-5 text-brown" />
