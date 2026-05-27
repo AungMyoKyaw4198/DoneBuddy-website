@@ -90,9 +90,18 @@ public/
   CNAME
 ```
 
+## Legal pages
+
+Privacy Policy and Terms content is sourced from markdown at the repo root:
+
+- [`PRIVACY_POLICY.md`](PRIVACY_POLICY.md) → `/privacy`
+- [`TERMS_OF_SERVICE.md`](TERMS_OF_SERVICE.md) → `/terms`
+
+Edit those files and rebuild — the site renders them automatically via `react-markdown`.
+
 ## Routes
 
 - `/` — Landing page
 - `/about` — About DoneBuddy
-- `/privacy` — Privacy Policy (placeholder legal copy)
-- `/terms` — Terms & Conditions (placeholder legal copy)
+- `/privacy` — Privacy Policy (rendered from [`PRIVACY_POLICY.md`](PRIVACY_POLICY.md))
+- `/terms` — Terms & Conditions (rendered from [`TERMS_OF_SERVICE.md`](TERMS_OF_SERVICE.md))

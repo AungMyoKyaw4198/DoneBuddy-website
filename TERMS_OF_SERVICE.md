@@ -27,7 +27,7 @@ Do not abuse the service, attempt unauthorized access, or use the app for unlawf
 
 ## Intellectual property
 
-The app, artwork, and branding are owned by XLance or licensors. You receive a limited license to use the app for personal, non-commercial purposes.
+The app, artwork, and branding are owned by Xlance Collective Co.ltd or licensors. You receive a limited license to use the app for personal, non-commercial purposes.
 
 ## Disclaimer
 
@@ -35,7 +35,7 @@ The app is provided "as is" without warranties of fitness for a particular purpo
 
 ## Limitation of liability
 
-To the maximum extent permitted by law, XLance is not liable for indirect or consequential damages arising from use of the app.
+To the maximum extent permitted by law, Xlance Collective Co.ltd is not liable for indirect or consequential damages arising from use of the app.
 
 ## Termination
 
@@ -43,11 +43,11 @@ We may suspend access for violations of these Terms. You may stop using the app 
 
 ## Governing law
 
-These Terms are governed by the laws applicable to XLance's place of business, without regard to conflict-of-law rules.
+These Terms are governed by the laws applicable to Xlance Collective Co.ltd's place of business, without regard to conflict-of-law rules.
 
 ## Contact
 
-support@xlance.app
+support@donebuddy.app
 
 ## Changes
 

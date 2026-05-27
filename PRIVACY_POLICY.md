@@ -2,7 +2,7 @@
 
 **Last updated:** May 2026
 
-DoneBuddy ("we", "our", or "the app") is operated by XLance. This policy describes how we collect, use, and protect information when you use the DoneBuddy mobile application.
+DoneBuddy ("we", "our", or "the app") is operated by Xlance Collective Co.ltd. This policy describes how we collect, use, and protect information when you use the DoneBuddy mobile application.
 
 ## Information we collect
 
@@ -40,7 +40,7 @@ Depending on your region, you may request access, correction, or deletion of per
 
 ## Contact
 
-support@xlance.app
+support@donebuddy.app
 
 ## Changes
 
