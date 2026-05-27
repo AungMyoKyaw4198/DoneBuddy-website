@@ -12,8 +12,8 @@ export default function Hero() {
         <div className="absolute bottom-0 left-1/3 h-48 w-48 rounded-full bg-warm-yellow/10 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 md:px-6 lg:grid-cols-2 lg:py-24">
-        <ScrollReveal>
+      <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:gap-12 md:px-6 lg:grid-cols-2 lg:py-24">
+        <ScrollReveal className="relative z-10">
           <h1 className="font-heading text-4xl font-bold leading-tight text-brown md:text-5xl lg:text-6xl">
             Build habits. Raise{' '}
             <span className="text-sage">happiness.</span>{' '}
@@ -29,30 +29,37 @@ export default function Hero() {
           </div>
 
           <div className="mt-8 flex items-center gap-3 text-sm text-brown-light">
-            <Leaf className="h-4 w-4 text-sage" aria-hidden="true" />
+            <Leaf className="h-4 w-4 shrink-0 text-sage" aria-hidden="true" />
             <p>
               Join thousands of users building better habits with their adorable
               buddy!
             </p>
-            <Leaf className="h-4 w-4 rotate-180 text-sage" aria-hidden="true" />
+            <Leaf
+              className="h-4 w-4 shrink-0 rotate-180 text-sage"
+              aria-hidden="true"
+            />
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.15} className="relative mx-auto w-full max-w-lg">
-          <div className="relative flex items-end justify-center">
-            <FloatingMascot className="relative z-10 w-[min(100%,320px)]">
+        <ScrollReveal
+          delay={0.15}
+          className="relative z-0 mx-auto w-full max-w-md lg:max-w-lg"
+        >
+          <div className="relative mx-auto h-[22rem] w-full max-w-[20rem] sm:h-[24rem] sm:max-w-[22rem] md:h-[26rem] md:max-w-[24rem] lg:h-[28rem] lg:max-w-[26rem]">
+            <FloatingMascot className="absolute bottom-0 left-1/2 z-10 w-[68%] max-w-[15rem] -translate-x-[58%] sm:w-[72%] sm:max-w-[16rem] lg:max-w-[18rem]">
               <img
                 src="/assets/mascot/hero-corgi.png"
                 alt="DoneBuddy corgi mascot wearing a green bandana"
-                className="w-full drop-shadow-2xl"
+                className="h-auto w-full drop-shadow-2xl"
               />
             </FloatingMascot>
 
-            <div className="absolute bottom-8 right-0 z-20 md:right-4">
+            <div className="absolute bottom-2 right-0 z-20 sm:bottom-4 lg:bottom-6">
               <PhoneMockup
                 screenshotSrc="/assets/screenshots/today-tasks.svg"
                 screenshotAlt="DoneBuddy app today tasks screen placeholder"
-                className="rotate-6"
+                className="rotate-3 sm:rotate-6"
+                size="sm"
               />
             </div>
           </div>
