@@ -1,5 +1,7 @@
-export const APP_STORE_URL = '#'
+export const APP_STORE_URL =
+  'https://apps.apple.com/us/app/donebuddy-habit-tracker-pet/id6764769357'
 export const GOOGLE_PLAY_URL = '#'
+export const SHOW_GOOGLE_PLAY = false
 export const CONTACT_EMAIL = 'hello@donebuddy.app'
 export const APP_LOGO = '/applogo.png'
 

@@ -72,8 +72,8 @@ Replace these files directly to update the artwork sitewide.
 Update App Store and Google Play URLs in [`src/lib/constants.ts`](src/lib/constants.ts):
 
 ```ts
-export const APP_STORE_URL = 'https://apps.apple.com/...'
-export const GOOGLE_PLAY_URL = 'https://play.google.com/...'
+export const APP_STORE_URL = 'https://apps.apple.com/us/app/donebuddy-habit-tracker-pet/id6764769357'
+export const SHOW_GOOGLE_PLAY = false // set true and add GOOGLE_PLAY_URL when Android launches
 ```
 
 ## Project structure
