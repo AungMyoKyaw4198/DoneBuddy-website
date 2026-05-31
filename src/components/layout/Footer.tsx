@@ -9,12 +9,12 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-brown/5 bg-cream">
+    <footer className="border-t border-outline-variant/40 bg-surface-container-low">
       <div className="mx-auto max-w-6xl px-4 py-12 md:px-6">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <Logo />
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-brown-light">
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-on-surface-variant">
               Build habits, raise happiness. You and your pet, growing together.
             </p>
             <div className="mt-5 flex gap-3">
@@ -24,7 +24,7 @@ export default function Footer() {
                   href={link.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full bg-sage-light px-3 py-1.5 text-xs font-semibold text-sage-dark transition hover:bg-sage/20"
+                  className="rounded-full bg-primary-fixed px-3 py-1.5 font-label text-xs font-semibold text-primary-dark transition hover:bg-primary-fixed-dim/60"
                 >
                   {link.label}
                 </a>
@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-heading text-lg font-semibold text-brown">
+            <h3 className="font-heading text-lg font-bold text-on-surface">
               Navigation
             </h3>
             <ul className="mt-4 space-y-2">
@@ -42,14 +42,14 @@ export default function Footer() {
                   {link.href.startsWith('/#') ? (
                     <a
                       href={link.href}
-                      className="text-sm text-brown-light hover:text-sage-dark"
+                      className="text-sm text-on-surface-variant hover:text-primary"
                     >
                       {link.label}
                     </a>
                   ) : (
                     <Link
                       to={link.href}
-                      className="text-sm text-brown-light hover:text-sage-dark"
+                      className="text-sm text-on-surface-variant hover:text-primary"
                     >
                       {link.label}
                     </Link>
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-heading text-lg font-semibold text-brown">
+            <h3 className="font-heading text-lg font-bold text-on-surface">
               Legal
             </h3>
             <ul className="mt-4 space-y-2">
@@ -68,7 +68,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-brown-light hover:text-sage-dark"
+                    className="text-sm text-on-surface-variant hover:text-primary"
                   >
                     {link.label}
                   </Link>
@@ -78,22 +78,22 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-heading text-lg font-semibold text-brown">
+            <h3 className="font-heading text-lg font-bold text-on-surface">
               Contact
             </h3>
-            <p className="mt-4 text-sm text-brown-light">
+            <p className="mt-4 text-sm text-on-surface-variant">
               Questions or feedback? We would love to hear from you.
             </p>
             <a
               href={`mailto:${CONTACT_EMAIL}`}
-              className="mt-2 inline-block text-sm font-semibold text-sage-dark hover:underline"
+              className="mt-2 inline-block text-sm font-semibold text-primary hover:underline"
             >
               {CONTACT_EMAIL}
             </a>
           </div>
         </div>
 
-        <p className="mt-10 border-t border-brown/5 pt-6 text-center text-sm text-brown-light">
+        <p className="mt-10 border-t border-outline-variant/40 pt-6 text-center text-sm text-on-surface-variant">
           © {new Date().getFullYear()} DoneBuddy. All rights reserved.
         </p>
       </div>

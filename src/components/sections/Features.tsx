@@ -29,16 +29,16 @@ export default function Features() {
             return (
               <StaggerItem key={feature.title}>
                 <HoverScale>
-                  <article className="h-full rounded-3xl bg-white p-6 shadow-sm ring-1 ring-brown/5 transition-shadow hover:shadow-lg">
+                  <article className="card-surface h-full p-6 transition-shadow hover:shadow-card-hover">
                     <div
-                      className={`mb-5 inline-flex h-14 w-14 items-center justify-center rounded-full ${feature.color}`}
+                      className={`mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl ${feature.color}`}
                     >
                       <Icon className="h-7 w-7" aria-hidden="true" />
                     </div>
-                    <h3 className="font-heading text-xl font-semibold text-brown">
+                    <h3 className="font-heading text-xl font-bold text-on-surface">
                       {feature.title}
                     </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-brown-light">
+                    <p className="mt-3 text-sm leading-relaxed text-on-surface-variant">
                       {feature.description}
                     </p>
                   </article>

@@ -50,7 +50,7 @@ export default function HowItWorks() {
       <div className="mx-auto max-w-6xl">
         <ScrollReveal>
           <SectionHeading
-            icon={<Leaf className="h-5 w-5 text-sage" aria-hidden="true" />}
+            icon={<Leaf className="h-5 w-5 text-secondary" aria-hidden="true" />}
           >
             How It Works
           </SectionHeading>
@@ -64,14 +64,14 @@ export default function HowItWorks() {
 
                 return (
                   <div key={step.title} className="contents">
-                    <article className="flex min-w-0 flex-1 flex-col rounded-3xl bg-white p-5 shadow-sm ring-1 ring-brown/5 sm:p-6">
-                      <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-sage-light text-sage-dark">
+                    <article className="card-surface flex min-w-0 flex-1 flex-col p-5 sm:p-6">
+                      <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary-fixed text-primary-dark">
                         <Icon className="h-6 w-6" aria-hidden="true" />
                       </div>
-                      <h3 className="font-heading text-lg font-semibold text-brown">
+                      <h3 className="font-heading text-lg font-bold text-on-surface">
                         {step.title}
                       </h3>
-                      <p className="mt-2 text-sm leading-relaxed text-brown-light">
+                      <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
                         {step.description}
                       </p>
                     </article>

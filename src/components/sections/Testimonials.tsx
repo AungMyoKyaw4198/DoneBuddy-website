@@ -22,7 +22,9 @@ export default function Testimonials() {
       <div className="mx-auto max-w-6xl">
         <ScrollReveal>
           <SectionHeading
-            icon={<Heart className="h-5 w-5 fill-warm-pink text-warm-pink" />}
+            icon={
+              <Heart className="h-5 w-5 fill-primary-fixed-dim text-primary-container" />
+            }
           >
             Loved by Thousands
           </SectionHeading>
@@ -32,10 +34,10 @@ export default function Testimonials() {
           <button
             type="button"
             onClick={prev}
-            className="absolute -left-2 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-white p-2 shadow-md ring-1 ring-brown/5 md:block lg:-left-4"
+            className="absolute -left-2 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-white p-2 shadow-card ring-1 ring-outline-variant/40 md:block lg:-left-4"
             aria-label="Previous testimonials"
           >
-            <ChevronLeft className="h-5 w-5 text-brown" />
+            <ChevronLeft className="h-5 w-5 text-on-surface" />
           </button>
 
           <div className="overflow-x-hidden py-3 md:py-4">
@@ -51,25 +53,25 @@ export default function Testimonials() {
                 {visibleTestimonials.map((testimonial) => (
                   <article
                     key={`${testimonial.name}-${testimonial.quote.slice(0, 12)}`}
-                    className="flex min-h-[15.5rem] flex-col rounded-3xl bg-white p-7 shadow-sm ring-1 ring-brown/5 md:min-h-[17rem] lg:min-h-[18rem] lg:p-8"
+                    className="card-surface flex min-h-[15.5rem] flex-col p-7 md:min-h-[17rem] lg:min-h-[18rem] lg:p-8"
                   >
                     <div className="mb-5 flex gap-1">
                       {Array.from({ length: 5 }).map((_, starIndex) => (
                         <Star
                           key={starIndex}
-                          className="h-4 w-4 fill-warm-yellow text-warm-yellow lg:h-[1.125rem] lg:w-[1.125rem]"
+                          className="h-4 w-4 fill-tertiary-fixed-dim text-tertiary-fixed-dim lg:h-[1.125rem] lg:w-[1.125rem]"
                           aria-hidden="true"
                         />
                       ))}
                     </div>
-                    <p className="flex-1 text-sm leading-relaxed text-brown-light italic lg:text-[0.9375rem] lg:leading-7">
+                    <p className="flex-1 text-sm leading-relaxed text-on-surface-variant italic lg:text-[0.9375rem] lg:leading-7">
                       &ldquo;{testimonial.quote}&rdquo;
                     </p>
                     <div className="mt-6 flex items-center gap-3 lg:mt-8">
-                      <div className="flex h-11 w-11 items-center justify-center rounded-full bg-sage-light font-semibold text-sage-dark">
+                      <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary-fixed font-label font-semibold text-primary-dark">
                         {testimonial.initials}
                       </div>
-                      <span className="font-semibold text-brown">
+                      <span className="font-heading font-bold text-on-surface">
                         {testimonial.name}
                       </span>
                     </div>
@@ -82,28 +84,28 @@ export default function Testimonials() {
           <button
             type="button"
             onClick={next}
-            className="absolute -right-2 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-white p-2 shadow-md ring-1 ring-brown/5 md:block lg:-right-4"
+            className="absolute -right-2 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-white p-2 shadow-card ring-1 ring-outline-variant/40 md:block lg:-right-4"
             aria-label="Next testimonials"
           >
-            <ChevronRight className="h-5 w-5 text-brown" />
+            <ChevronRight className="h-5 w-5 text-on-surface" />
           </button>
 
           <div className="mt-8 flex items-center justify-center gap-3 md:hidden">
             <button
               type="button"
               onClick={prev}
-              className="rounded-full bg-white p-2 shadow-md ring-1 ring-brown/5"
+              className="rounded-full bg-white p-2 shadow-card ring-1 ring-outline-variant/40"
               aria-label="Previous testimonials"
             >
-              <ChevronLeft className="h-5 w-5 text-brown" />
+              <ChevronLeft className="h-5 w-5 text-on-surface" />
             </button>
             <button
               type="button"
               onClick={next}
-              className="rounded-full bg-white p-2 shadow-md ring-1 ring-brown/5"
+              className="rounded-full bg-white p-2 shadow-card ring-1 ring-outline-variant/40"
               aria-label="Next testimonials"
             >
-              <ChevronRight className="h-5 w-5 text-brown" />
+              <ChevronRight className="h-5 w-5 text-on-surface" />
             </button>
           </div>
 
@@ -115,8 +117,8 @@ export default function Testimonials() {
                 onClick={() => setIndex(dotIndex)}
                 className={`h-2.5 rounded-full transition-all ${
                   dotIndex === index
-                    ? 'w-8 bg-sage'
-                    : 'w-2.5 bg-brown/20 hover:bg-brown/35'
+                    ? 'w-8 bg-primary'
+                    : 'w-2.5 bg-outline-variant hover:bg-outline'
                 }`}
                 aria-label={`Go to testimonial ${dotIndex + 1}`}
               />

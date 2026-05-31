@@ -7,19 +7,19 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-20 top-10 h-64 w-64 rounded-full bg-sage/10 blur-3xl" />
-        <div className="absolute right-0 top-32 h-72 w-72 rounded-full bg-warm-orange/10 blur-3xl" />
-        <div className="absolute bottom-0 left-1/3 h-48 w-48 rounded-full bg-warm-yellow/10 blur-3xl" />
+        <div className="absolute -left-20 top-10 h-64 w-64 rounded-full bg-primary-fixed/60 blur-3xl" />
+        <div className="absolute right-0 top-32 h-72 w-72 rounded-full bg-secondary-container/40 blur-3xl" />
+        <div className="absolute bottom-0 left-1/3 h-48 w-48 rounded-full bg-tertiary-fixed/50 blur-3xl" />
       </div>
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:gap-12 md:px-6 lg:grid-cols-2 lg:py-24">
         <ScrollReveal className="relative z-10">
-          <h1 className="font-heading text-4xl font-bold leading-tight text-brown md:text-5xl lg:text-6xl">
+          <h1 className="font-heading text-4xl font-extrabold leading-tight text-on-surface md:text-5xl lg:text-6xl">
             Build habits. Raise{' '}
-            <span className="text-sage">happiness.</span>{' '}
+            <span className="text-primary">happiness.</span>{' '}
             <span aria-hidden="true">❤️</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-brown-light">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-on-surface-variant">
             DoneBuddy is your cozy habit tracker with a virtual pet companion.
             Stay productive, take care of your pet, and grow together every day.
           </p>
@@ -28,14 +28,14 @@ export default function Hero() {
             <AppStoreBadges />
           </div>
 
-          <div className="mt-8 flex items-center gap-3 text-sm text-brown-light">
-            <Leaf className="h-4 w-4 shrink-0 text-sage" aria-hidden="true" />
+          <div className="mt-8 flex items-center gap-3 text-sm text-on-surface-variant">
+            <Leaf className="h-4 w-4 shrink-0 text-secondary" aria-hidden="true" />
             <p>
               Join thousands of users building better habits with their adorable
               buddy!
             </p>
             <Leaf
-              className="h-4 w-4 shrink-0 rotate-180 text-sage"
+              className="h-4 w-4 shrink-0 rotate-180 text-secondary"
               aria-hidden="true"
             />
           </div>

@@ -7,9 +7,9 @@ export default function Logo({ className = '' }: { className?: string }) {
         src={APP_LOGO}
         alt=""
         aria-hidden="true"
-        className="h-9 w-9 rounded-xl object-cover shadow-sm"
+        className="h-9 w-9 rounded-xl object-cover shadow-card"
       />
-      <span className="font-heading text-xl font-semibold text-brown">
+      <span className="font-heading text-xl font-bold text-on-surface">
         DoneBuddy
       </span>
     </div>

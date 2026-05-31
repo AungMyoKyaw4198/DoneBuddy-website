@@ -1,19 +1,38 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #fdfbf7;
-  --color-sage: #88ab75;
-  --color-sage-dark: #6f8f5e;
-  --color-sage-light: #eef5ea;
-  --color-brown: #4a3f35;
-  --color-brown-light: #6b5f54;
-  --color-warm-orange: #e8924f;
-  --color-warm-pink: #e8847a;
-  --color-warm-yellow: #f0b429;
-  --color-warm-purple: #9b87c4;
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-variant: #d3e4fe;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #494454;
+  --color-outline: #7b7486;
+  --color-outline-variant: #cbc3d7;
+  --color-primary: #6b38d4;
+  --color-primary-dark: #5516be;
+  --color-primary-container: #8455ef;
+  --color-primary-fixed: #e9ddff;
+  --color-primary-fixed-dim: #d0bcff;
+  --color-on-primary: #ffffff;
+  --color-secondary: #006c49;
+  --color-secondary-container: #6cf8bb;
+  --color-on-secondary-container: #00714d;
+  --color-secondary-fixed: #6ffbbe;
+  --color-tertiary: #825100;
+  --color-tertiary-container: #a36700;
+  --color-tertiary-fixed: #ffddb8;
+  --color-tertiary-fixed-dim: #ffb95f;
 
-  --font-heading: "Fredoka", system-ui, sans-serif;
-  --font-body: "Nunito", system-ui, sans-serif;
+  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", system-ui, sans-serif;
+  --font-label: "Lexend", system-ui, sans-serif;
+
+  --shadow-card: 0 8px 24px color-mix(in srgb, #6b38d4 15%, transparent);
+  --shadow-card-hover: 0 12px 32px color-mix(in srgb, #6b38d4 22%, transparent);
+  --shadow-tactile: 0 4px 0 0 #5516be;
 }
 
 html {
@@ -29,9 +48,10 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: var(--color-cream);
-  color: var(--color-brown);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
   font-family: var(--font-body);
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -45,5 +65,37 @@ h6 {
 }
 
 ::selection {
-  background-color: color-mix(in srgb, var(--color-sage) 35%, white);
+  background-color: color-mix(in srgb, var(--color-primary-fixed-dim) 55%, white);
+}
+
+@utility shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+@utility shadow-card-hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+@utility btn-tactile {
+  box-shadow: var(--shadow-tactile);
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease,
+    background-color 150ms ease;
+
+  &:hover {
+    background-color: var(--color-primary-container);
+  }
+
+  &:active {
+    transform: translateY(4px);
+    box-shadow: none;
+  }
+}
+
+@utility card-surface {
+  border-radius: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: var(--shadow-card);
+  border: 1px solid color-mix(in srgb, var(--color-outline-variant) 55%, transparent);
 }

@@ -3,25 +3,25 @@ import ReactMarkdown from 'react-markdown'
 
 const components: Components = {
   h1: ({ children }) => (
-    <h1 className="font-heading text-4xl font-bold text-brown">{children}</h1>
+    <h1 className="font-heading text-4xl font-extrabold text-on-surface">{children}</h1>
   ),
   h2: ({ children }) => (
-    <h2 className="font-heading text-xl font-semibold text-brown">{children}</h2>
+    <h2 className="font-heading text-xl font-bold text-on-surface">{children}</h2>
   ),
   p: ({ children }) => (
-    <p className="leading-relaxed text-brown-light">{children}</p>
+    <p className="leading-relaxed text-on-surface-variant">{children}</p>
   ),
   ul: ({ children }) => (
-    <ul className="list-disc space-y-2 pl-6 text-brown-light">{children}</ul>
+    <ul className="list-disc space-y-2 pl-6 text-on-surface-variant">{children}</ul>
   ),
   li: ({ children }) => <li className="leading-relaxed">{children}</li>,
   strong: ({ children }) => (
-    <strong className="font-semibold text-brown">{children}</strong>
+    <strong className="font-semibold text-on-surface">{children}</strong>
   ),
   a: ({ href, children }) => (
     <a
       href={href}
-      className="font-semibold text-sage-dark hover:underline"
+      className="font-semibold text-primary hover:underline"
       target={href?.startsWith('http') ? '_blank' : undefined}
       rel={href?.startsWith('http') ? 'noreferrer' : undefined}
     >

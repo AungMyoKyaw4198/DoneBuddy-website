@@ -6,8 +6,8 @@ import HoverScale from '../ui/HoverScale'
 import { navLinks } from '../../lib/constants'
 
 function getLinkClass(isActive: boolean) {
-  return `rounded-full px-3 py-2 text-sm font-medium transition-colors hover:text-sage-dark ${
-    isActive ? 'text-sage-dark' : 'text-brown-light'
+  return `rounded-full px-3 py-2 font-label text-sm font-semibold transition-colors hover:text-primary ${
+    isActive ? 'text-primary' : 'text-on-surface-variant'
   }`
 }
 
@@ -40,7 +40,7 @@ function MobileNavLink({
   onNavigate: () => void
 }) {
   const className =
-    'rounded-xl px-3 py-3 text-brown-light hover:bg-sage-light hover:text-sage-dark'
+    'rounded-xl px-3 py-3 text-on-surface-variant hover:bg-surface-container-low hover:text-primary'
 
   if (href.startsWith('/#')) {
     return (
@@ -57,12 +57,15 @@ function MobileNavLink({
   )
 }
 
+const downloadButtonClass =
+  'inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 font-label text-sm font-bold text-on-primary btn-tactile'
+
 export default function Header() {
   const [open, setOpen] = useState(false)
   const closeMenu = () => setOpen(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-brown/5 bg-cream/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-outline-variant/40 bg-surface/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 md:px-6">
         <Link to="/" aria-label="DoneBuddy home">
           <Logo />
@@ -76,10 +79,7 @@ export default function Header() {
 
         <div className="hidden lg:block">
           <HoverScale>
-            <a
-              href="/#download"
-              className="inline-flex items-center gap-2 rounded-full bg-sage px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:bg-sage-dark"
-            >
+            <a href="/#download" className={downloadButtonClass}>
               <PawPrint className="h-4 w-4" aria-hidden="true" />
               Download App
             </a>
@@ -88,7 +88,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="rounded-full p-2 text-brown lg:hidden"
+          className="rounded-full p-2 text-on-surface lg:hidden"
           aria-label={open ? 'Close menu' : 'Open menu'}
           onClick={() => setOpen((value) => !value)}
         >
@@ -98,7 +98,7 @@ export default function Header() {
 
       {open && (
         <nav
-          className="border-t border-brown/5 px-4 py-4 lg:hidden"
+          className="border-t border-outline-variant/40 px-4 py-4 lg:hidden"
           aria-label="Mobile"
         >
           <div className="flex flex-col gap-1">
@@ -109,11 +109,7 @@ export default function Header() {
                 onNavigate={closeMenu}
               />
             ))}
-            <a
-              href="/#download"
-              onClick={closeMenu}
-              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-sage px-5 py-3 text-sm font-semibold text-white"
-            >
+            <a href="/#download" onClick={closeMenu} className={`mt-2 justify-center ${downloadButtonClass}`}>
               <PawPrint className="h-4 w-4" />
               Download App
             </a>

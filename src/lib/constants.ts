@@ -33,25 +33,25 @@ export const features = [
     title: 'Track Habits',
     description: 'Create daily routines and check them off with ease.',
     icon: 'check',
-    color: 'bg-sage/15 text-sage-dark',
+    color: 'bg-secondary-container/35 text-on-secondary-container',
   },
   {
     title: 'Care for Your Pet',
     description: 'Your adorable buddy grows happier as you stay consistent.',
     icon: 'heart',
-    color: 'bg-warm-pink/15 text-warm-pink',
+    color: 'bg-primary-fixed text-primary-dark',
   },
   {
     title: 'Stay Motivated',
     description: 'Earn streaks, rewards, and cheerful encouragement.',
     icon: 'star',
-    color: 'bg-warm-yellow/15 text-warm-yellow',
+    color: 'bg-tertiary-fixed text-tertiary-container',
   },
   {
     title: 'See Your Progress',
     description: 'Visualize your growth with insights and milestones.',
     icon: 'chart',
-    color: 'bg-warm-purple/15 text-warm-purple',
+    color: 'bg-primary-fixed-dim/40 text-primary-container',
   },
 ] as const
 

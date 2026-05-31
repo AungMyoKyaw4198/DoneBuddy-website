@@ -5,9 +5,9 @@ import ScrollReveal from '../ui/ScrollReveal'
 export default function WhyLove() {
   return (
     <section className="px-4 py-16 md:px-6">
-      <div className="relative mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-sage-light px-6 py-12 md:px-10 md:py-16">
+      <div className="relative mx-auto max-w-6xl overflow-hidden rounded-xl bg-surface-container px-6 py-12 md:rounded-2xl md:px-10 md:py-16">
         <PawPrint
-          className="pointer-events-none absolute -right-6 bottom-4 h-40 w-40 text-sage/10"
+          className="pointer-events-none absolute -right-6 bottom-4 h-40 w-40 text-primary/10"
           aria-hidden="true"
         />
 
@@ -21,17 +21,17 @@ export default function WhyLove() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.15}>
-            <h2 className="font-heading text-3xl font-semibold text-brown md:text-4xl">
+            <h2 className="font-heading text-3xl font-bold text-on-surface md:text-4xl">
               Why You&apos;ll Love{' '}
-              <span className="text-sage">DoneBuddy</span>
+              <span className="text-primary">DoneBuddy</span>
             </h2>
             <ul className="mt-8 space-y-4">
               {whyLovePoints.map((point) => (
                 <li key={point} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-sage text-white">
+                  <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-secondary text-on-primary">
                     <Check className="h-4 w-4" aria-hidden="true" />
                   </span>
-                  <span className="text-brown-light">{point}</span>
+                  <span className="text-on-surface-variant">{point}</span>
                 </li>
               ))}
             </ul>
