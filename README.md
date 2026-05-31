@@ -36,36 +36,22 @@ npm run preview
 
 The [`public/CNAME`](public/CNAME) file is included in the build output so GitHub Pages keeps the custom domain configured.
 
-## Replace app screenshots
+## App & pet assets
 
-Drop your real screenshots into `public/assets/screenshots/` using these filenames:
+App screens and pet characters are in `public/assets/`:
 
-| File | Used in |
-|------|---------|
-| `today-tasks.png` (or update component to `.png`) | Hero phone mockup |
-| `streak.png` | How It Works phone mockup |
+| Asset | Section |
+|-------|---------|
+| `TaskPage/` | Hero, App Showcase |
+| `PetPage/` | How It Works |
+| `ProfilePage/` | Why You'll Love |
+| `pets/*.png` | Meet Your Buddies, hero accents |
 
-Current placeholders are SVG files (`today-tasks.svg`, `streak.svg`). To swap in PNGs:
-
-1. Add your PNG files to `public/assets/screenshots/`.
-2. Update the `screenshotSrc` paths in:
-   - [`src/components/sections/Hero.tsx`](src/components/sections/Hero.tsx)
-   - [`src/components/sections/HowItWorks.tsx`](src/components/sections/HowItWorks.tsx)
-
-No other code changes are required.
+Update paths in [`src/lib/constants.ts`](src/lib/constants.ts) (`ASSETS`, `appScreens`, `petBuddies`).
 
 ## App logo
 
 The DoneBuddy app logo lives at [`public/applogo.png`](public/applogo.png). It is used in the header, footer, bottom CTA, and browser favicon. Replace that file to update the logo sitewide.
-
-## Replace mascot illustrations
-
-Generated mascot images live in `public/assets/mascot/`:
-
-- `hero-corgi.png` — hero section
-- `corgi-heart.png` — “Why You'll Love DoneBuddy” section
-
-Replace these files directly to update the artwork sitewide.
 
 ## Configure store links
 

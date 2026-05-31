@@ -5,6 +5,76 @@ export const SHOW_GOOGLE_PLAY = false
 export const CONTACT_EMAIL = 'hello@donebuddy.app'
 export const APP_LOGO = '/applogo.png'
 
+export const ASSETS = {
+  screens: {
+    tasks: {
+      portrait: '/assets/TaskPage/TaskPage-portrait.png',
+      left: '/assets/TaskPage/TaskPage-left.png',
+    },
+    pet: {
+      portrait: '/assets/PetPage/PetPage-portrait.png',
+      left: '/assets/PetPage/PetPage-left.png',
+    },
+    profile: {
+      portrait: '/assets/ProfilePage/ProfilePage-portrait.png',
+      left: '/assets/ProfilePage/ProfilePage-left.png',
+    },
+  },
+  pets: {
+    bean: '/assets/pets/bean.png',
+    churro: '/assets/pets/churro.png',
+    mochi: '/assets/pets/mochi.png',
+    sunny: '/assets/pets/sunny.png',
+  },
+} as const
+
+export const appScreens = [
+  {
+    title: 'Track Habits & Tasks',
+    description:
+      'Organize habits, dailies, and to-dos — then earn coins every time you check one off.',
+    image: ASSETS.screens.tasks.portrait,
+    alt: 'DoneBuddy tasks screen showing habits, dailies, and to-dos',
+  },
+  {
+    title: 'Care for Your Pet',
+    description:
+      'Visit your buddy’s room, play together, and keep hunger and happiness in check.',
+    image: ASSETS.screens.pet.portrait,
+    alt: 'DoneBuddy pet room with your virtual companion',
+  },
+  {
+    title: 'See Your Progress',
+    description:
+      'Track streaks, coins earned, and how your consistency keeps your pet happy.',
+    image: ASSETS.screens.profile.portrait,
+    alt: 'DoneBuddy profile screen with streak and stats',
+  },
+] as const
+
+export const petBuddies = [
+  {
+    name: 'Bean',
+    tagline: 'Certified side-eye specialist',
+    image: ASSETS.pets.bean,
+  },
+  {
+    name: 'Churro',
+    tagline: 'Zen capybara energy',
+    image: ASSETS.pets.churro,
+  },
+  {
+    name: 'Mochi',
+    tagline: 'Hang-loose happiness',
+    image: ASSETS.pets.mochi,
+  },
+  {
+    name: 'Sunny',
+    tagline: 'Pure good-vibes golden retriever',
+    image: ASSETS.pets.sunny,
+  },
+] as const
+
 export const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Features', href: '/#features' },

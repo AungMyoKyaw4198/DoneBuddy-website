@@ -5,10 +5,9 @@ import {
   Star,
   Trophy,
 } from 'lucide-react'
-import { howItWorksSteps } from '../../lib/constants'
-import PhoneMockup from '../ui/PhoneMockup'
+import { ASSETS, howItWorksSteps } from '../../lib/constants'
 import SectionHeading from '../ui/SectionHeading'
-import ScrollReveal from '../ui/ScrollReveal'
+import ScrollReveal, { FloatingMascot } from '../ui/ScrollReveal'
 
 const iconMap = {
   clipboard: ClipboardList,
@@ -56,7 +55,7 @@ export default function HowItWorks() {
           </SectionHeading>
         </ScrollReveal>
 
-        <div className="mt-12 grid items-center gap-12 xl:grid-cols-[1fr_auto]">
+        <div className="mt-12 grid items-center gap-10 md:gap-12 lg:grid-cols-[1fr_auto]">
           <ScrollReveal delay={0.1}>
             <div className="flex flex-col lg:flex-row lg:items-stretch">
               {howItWorksSteps.map((step, index) => {
@@ -88,11 +87,27 @@ export default function HowItWorks() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.2} className="flex justify-center">
-            <PhoneMockup
-              screenshotSrc="/assets/screenshots/streak.svg"
-              screenshotAlt="DoneBuddy app streak screen placeholder"
-            />
+          <ScrollReveal
+            delay={0.2}
+            className="mx-auto flex w-full max-w-[17rem] justify-center sm:max-w-[19rem] lg:mx-0 lg:max-w-[15rem] lg:justify-end xl:max-w-[17rem]"
+          >
+            <div className="relative w-full">
+              <img
+                src={ASSETS.screens.pet.portrait}
+                alt="DoneBuddy pet room where you play with and care for your buddy"
+                className="relative z-10 w-full drop-shadow-xl"
+                loading="lazy"
+              />
+
+              <FloatingMascot className="absolute -bottom-1 -left-[18%] z-20 w-[46%] max-w-[7.5rem] sm:-left-[16%] sm:max-w-[8rem] lg:-left-[22%] lg:max-w-[7rem] xl:-left-[18%] xl:max-w-[7.5rem]">
+                <img
+                  src={ASSETS.pets.churro}
+                  alt=""
+                  aria-hidden="true"
+                  className="h-auto w-full drop-shadow-lg"
+                />
+              </FloatingMascot>
+            </div>
           </ScrollReveal>
         </div>
       </div>
