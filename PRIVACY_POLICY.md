@@ -2,7 +2,7 @@
 
 **Last updated:** May 2026
 
-DoneBuddy ("we", "our", or "the app") is operated by Xlance Collective Co.ltd. This policy describes how we collect, use, and protect information when you use the DoneBuddy mobile application.
+DoneBuddy ("we", "our", or "us") is operated by Xlance Collective Co.ltd. This policy describes how we collect, use, and protect information when you use the DoneBuddy mobile application and our website at [donebuddy.app](https://donebuddy.app).
 
 ## Information we collect
 
@@ -10,6 +10,7 @@ DoneBuddy ("we", "our", or "the app") is operated by Xlance Collective Co.ltd. T
 - **App content:** Pet names, task titles, habit progress, coins, badges, and settings you create in the app.
 - **Device data:** Push notification token (FCM) to deliver reminders; device type and OS version for diagnostics.
 - **Usage and diagnostics:** Anonymous analytics events (e.g. screens viewed, tasks completed) via Firebase Analytics; crash reports via Firebase Crashlytics.
+- **Website analytics:** Anonymous page views and traffic data on donebuddy.app via Google Analytics 4 (pages visited, device/browser type, approximate location).
 - **Purchases:** Subscription status via RevenueCat and the App Store / Google Play (we do not store payment card numbers).
 
 ## How we use information
@@ -22,7 +23,8 @@ DoneBuddy ("we", "our", or "the app") is operated by Xlance Collective Co.ltd. T
 ## Third-party services
 
 - **Supabase** — authentication and cloud database (Pro sync)
-- **Google Firebase** — analytics, crash reporting, messaging infrastructure
+- **Google Firebase** — app analytics, crash reporting, messaging infrastructure
+- **Google Analytics** — website traffic and page view analytics for donebuddy.app
 - **RevenueCat** — subscription management
 - **Apple / Google** — sign-in and in-app purchases
 

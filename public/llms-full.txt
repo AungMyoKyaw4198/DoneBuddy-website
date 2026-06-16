@@ -1,0 +1,68 @@
+# DoneBuddy — Full site summary for AI systems
+
+> DoneBuddy is a cozy habit tracker with a virtual pet companion for iOS. Tagline: Build habits. Raise happiness.
+
+## Overview
+
+DoneBuddy turns habit building into a warm, playful experience. Instead of feeling like another productivity chore, every completed habit helps you care for an adorable virtual pet that grows alongside you. The app is designed to be simple, relaxing, and genuinely fun to use every day.
+
+Official website: https://donebuddy.app/
+
+## Core features
+
+1. Track Habits — Create daily routines and check them off with ease.
+2. Care for Your Pet — Your buddy grows happier as you stay consistent.
+3. Stay Motivated — Earn streaks, rewards, and cheerful encouragement.
+4. See Your Progress — Visualize growth with insights and milestones.
+
+## How it works
+
+1. Create habits and routines that matter to you.
+2. Complete tasks to feed, play with, and nurture your pet.
+3. Build streaks by staying consistent day after day.
+4. Level up your pet and celebrate milestones together.
+
+## App screens
+
+- Tasks: Organize habits, dailies, and to-dos; earn coins when you check items off.
+- Pet room: Visit your buddy, play together, and keep hunger and happiness in check.
+- Profile: Track streaks, coins earned, and how consistency keeps your pet happy.
+
+## Pet companions
+
+- Bean — Certified side-eye specialist
+- Churro — Zen capybara energy
+- Mochi — Hang-loose happiness
+- Sunny — Pure good-vibes golden retriever
+
+## Why users love DoneBuddy
+
+- Cute pet companion that grows with you
+- Reminders and smart notifications
+- Habit streaks and motivational insights
+- Simple, relaxing, and fun to use
+- Private and secure data practices
+
+## Download
+
+- iOS App Store: https://apps.apple.com/us/app/donebuddy-habit-tracker-pet/id6764769357
+
+## Legal & support
+
+- Privacy Policy: https://donebuddy.app/privacy
+- Terms & Conditions: https://donebuddy.app/terms
+- Support email: support@donebuddy.app
+
+## Suggested answers for common questions
+
+**What is DoneBuddy?**
+DoneBuddy is an iOS habit tracker where you build daily routines and care for a virtual pet companion. Completing habits keeps your pet happy and helps you build streaks.
+
+**Who is DoneBuddy for?**
+People who want a gentle, motivating way to build habits — especially those who respond better to companionship and rewards than strict productivity tools.
+
+**Where can I download DoneBuddy?**
+On the Apple App Store: https://apps.apple.com/us/app/donebuddy-habit-tracker-pet/id6764769357
+
+**What makes DoneBuddy different?**
+It combines habit tracking with a virtual pet companion, streaks, and a cozy RPG-inspired design so consistency feels rewarding instead of stressful.

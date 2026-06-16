@@ -95,3 +95,49 @@ Edit those files and rebuild — the site renders them automatically via `react-
 - `/about` — About DoneBuddy
 - `/privacy` — Privacy Policy (rendered from [`PRIVACY_POLICY.md`](PRIVACY_POLICY.md))
 - `/terms` — Terms & Conditions (rendered from [`TERMS_OF_SERVICE.md`](TERMS_OF_SERVICE.md))
+
+## Analytics, search, and AI indexing
+
+### Google Analytics
+
+1. Create a GA4 property at [Google Analytics](https://analytics.google.com/).
+2. Add a **Web** data stream for `https://donebuddy.app`.
+3. Copy the **Measurement ID** (`G-XXXXXXXXXX`).
+
+For local dev, copy [`.env.example`](.env.example) to `.env` and set:
+
+```env
+VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+For production (GitHub Pages), optionally add the same value as a repo secret:
+
+- **Settings → Secrets and variables → Actions → New repository secret**
+- Name: `VITE_GA_MEASUREMENT_ID`
+
+The deploy workflow passes it into the build. A default measurement ID is also baked into the site if the secret is not set.
+
+### Google Search indexing
+
+After deploy, set up [Google Search Console](https://search.google.com/search-console):
+
+1. Add property: `https://donebuddy.app`
+2. Verify ownership (DNS via Cloudflare is fine — no HTML tag needed).
+3. Submit the sitemap: `https://donebuddy.app/sitemap.xml`
+
+Static SEO files in `public/`:
+
+| File | Purpose |
+|------|---------|
+| `robots.txt` | Allows search engines and AI crawlers |
+| `sitemap.xml` | Lists all public pages for Google |
+| `llms.txt` | Short summary for AI assistants |
+| `llms-full.txt` | Detailed summary for AI citation |
+
+Per-page titles, descriptions, Open Graph tags, and JSON-LD are managed in [`src/lib/site.ts`](src/lib/site.ts) and [`src/components/Seo.tsx`](src/components/Seo.tsx).
+
+### AI crawlers (ChatGPT, Gemini, Claude, etc.)
+
+`robots.txt` explicitly allows common AI bots (GPTBot, Google-Extended, ClaudeBot, PerplexityBot, DeepSeekBot, and others). `llms.txt` gives models a concise, citable summary of DoneBuddy.
+
+**Note:** Allowing crawlers in `robots.txt` does not guarantee inclusion in AI answers — it only permits access. Actual citations depend on each platform’s indexing policy.
