@@ -1,4 +1,5 @@
 # DoneBuddy Website
+-----
 
 Marketing site for [DoneBuddy](https://donebuddy.app) — a cozy habit tracker with a virtual pet companion.
 
