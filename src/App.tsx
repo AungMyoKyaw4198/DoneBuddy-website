@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import Seo from './components/Seo'
@@ -11,8 +11,14 @@ import { trackPageView } from './lib/analytics'
 
 export default function App() {
   const location = useLocation()
+  const isInitialLoad = useRef(true)
 
   useEffect(() => {
+    if (isInitialLoad.current) {
+      isInitialLoad.current = false
+      return
+    }
+
     trackPageView(`${location.pathname}${location.search}`)
   }, [location])
 
